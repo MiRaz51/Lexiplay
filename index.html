@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexiPlay - Información de Audios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Biblioteca para procesar Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>LexiPlay - Información de Audios</h1>
+            <button id="helpButton" class="icon-button">
+                <span class="material-icons">help_outline</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Selector de idioma -->
+            <div class="language-selector">
+                <h2>Idiomas disponibles</h2>
+                <div class="language-options">
+                    <div class="language-option selected" data-lang="en">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="Inglés">
+                        <span>Inglés</span>
+                    </div>
+                    <div class="language-option" data-lang="fr">
+                        <img src="https://flagcdn.com/w40/fr.png" alt="Francés">
+                        <span>Francés</span>
+                    </div>
+                    <div class="language-option" data-lang="it">
+                        <img src="https://flagcdn.com/w40/it.png" alt="Italiano">
+                        <span>Italiano</span>
+                    </div>
+                    <div class="language-option" data-lang="pt">
+                        <img src="https://flagcdn.com/w40/pt.png" alt="Portugués">
+                        <span>Portugués</span>
+                    </div>
+                    <div class="language-option" data-lang="va">
+                        <img src="https://flagcdn.com/w40/va.png" alt="Valenciano">
+                        <span>Valenciano</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de información -->
+            <div class="info-card">
+                <div class="card-header">
+                    <span class="material-icons">info_outline</span>
+                    <h2>Categorías</h2>
+                </div>
+                <div class="card-content" id="markdownContent">
+                    <!-- El contenido será reemplazado por el Markdown renderizado -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">
+                <a href="privacy-policy.html">Política de Privacidad</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Diálogo de ayuda -->
+    <div id="helpDialog" class="floating-dialog">
+        <div class="floating-dialog-content">
+            <div class="floating-dialog-header">
+                <h2>Ayuda</h2>
+                <button id="closeHelpButton" class="close-button">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="floating-dialog-body">
+                <p>Esta página muestra información sobre las categorías de audio disponibles en la aplicación. Explora las diferentes categorías y utiliza el reproductor para escuchar los audios.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
