@@ -93,7 +93,7 @@ Podemos actualizar nuestra Política de Privacidad periódicamente. Le notificar
 Si tiene preguntas sobre esta Política de Privacidad, contáctenos en:
 
 - Correo electrónico: miraz.gmr51@gmail.com
-- Sitio web: https://miraz51.github.io/Lexipaly/
+- Sitio web: https://miraz51.github.io/Lexiplay/
     `;
     
     // Inicializar
